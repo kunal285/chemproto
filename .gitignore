@@ -1,0 +1,35 @@
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# OS files
+.AppleDouble
+.LSOverride
+
+# Dependencies (if added later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build files (if added later)
+dist/
+build/
+*.log
+
+# Local development
+.env
+.env.local
