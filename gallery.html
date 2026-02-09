@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Chemical Prototyping</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-droplet"></i>
+                <span>ChemDetergent</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
+                <li><a href="procedure.html" class="nav-link">Procedure</a></li>
+                <li><a href="diagram.html" class="nav-link">Process</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="video.html" class="nav-link">Video</a></li>
+                <li><a href="application.html" class="nav-link">Application</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">Project Gallery</h2>
+            <p class="section-subtitle" data-aos="fade-up">Visual documentation of our chemical synthesis journey</p>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/400x300?text=Raw+Materials" alt="Raw Materials">
+                        <div class="gallery-overlay">
+                            <button type="button" class="gallery-btn" onclick="openLightbox(this)" title="Expand image">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h4>Raw Materials Assembly</h4>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/400x300?text=Mixing+Process" alt="Mixing Process">
+                        <div class="gallery-overlay">
+                            <button type="button" class="gallery-btn" onclick="openLightbox(this)" title="Expand image">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h4>Mixing & Reaction</h4>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/400x300?text=Filtration+Setup" alt="Filtration Setup">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(this)" title="Expand image">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h4>Filtration Equipment</h4>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/400x300?text=Testing+Lab" alt="Testing Lab">
+                        <div class="gallery-overlay">
+                            <button type="button" class="gallery-btn" onclick="openLightbox(this)" title="Expand image">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h4>Quality Testing Laboratory</h4>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/400x300?text=Final+Product" alt="Final Product">
+                        <div class="gallery-overlay">
+                            <button type="button" class="gallery-btn" onclick="openLightbox(this)" title="Expand image">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h4>Final Detergent Product</h4>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/400x300?text=Team+Success" alt="Team Success">
+                        <div class="gallery-overlay">
+                            <button type="button" class="gallery-btn" onclick="openLightbox(this)" title="Expand image">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h4>Team Celebration</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-nav">
+            <button class="lightbox-prev" onclick="prevImage()">&#10094;</button>
+            <button class="lightbox-next" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Chemical Prototyping</h4>
+                <p>An educational project demonstrating modern chemical synthesis and formulation techniques.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: project@chemistry.edu</p>
+                <p>Institute: Engineering Chemistry Department</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Chemical Prototyping Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
